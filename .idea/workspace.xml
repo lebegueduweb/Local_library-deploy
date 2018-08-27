@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b2cabbf9-771f-4af8-ac09-0dc29070f38e" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/skeleton_recovery/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/skeleton_recovery/settings.py" afterDir="false" />
-    </list>
+    <list default="true" id="b2cabbf9-771f-4af8-ac09-0dc29070f38e" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -77,7 +74,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="654" />
     <option name="width" value="683" />
     <option name="height" value="788" />
