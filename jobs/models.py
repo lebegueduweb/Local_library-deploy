@@ -14,6 +14,3 @@ class Job(models.Model):
     def summary(self):
         return self.body[:100]
 
-    def DisplayCodeSource_tags(self):
-        urlify = enumerate(self, int=1)
-        return [urlify(tag) for tag in self.tags.repository(', ')]
