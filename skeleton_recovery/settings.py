@@ -29,8 +29,7 @@ SECRET_KEY = os.environ.get('PAT_PASS', '8)^h+dswnb4g%l0b^1t9_)wrnx86-6_av@2q)b(
 # SECURITY WARNING: don't run with debug turned on in production!
 #DEBUG = True
 DEBUG = bool(os.environ.get('DJANGO_DEBUG', True))
-ALLOWED_HOSTS = [
-]
+ALLOWED_HOSTS = ['patportfolio001.herokuapp.com', '127.0.0.1']
 
 # Application definition
 
@@ -150,11 +149,11 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.0.3/howto/static-files/
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'skeleton_recovery/static/')
+    os.path.join(BASE_DIR, 'static')
 ]
 STATIC_URL = '/static/'
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
@@ -167,3 +166,5 @@ django_heroku.settings(locals())
 import dj_database_url
 db_from_env = dj_database_url.config(conn_max_age=500, ssl_require=True)
 DATABASES['default'].update(db_from_env)
+
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
